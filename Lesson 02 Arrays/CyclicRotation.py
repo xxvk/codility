@@ -142,6 +142,9 @@ def solution(A, K):
     if one_ele_set_length == 1 or one_ele_set_length == 0:
         return A
 
+    '''
+    main process
+    '''
     modK = K % N
 
     result_arr = A[-modK:] + A[:-modK]
